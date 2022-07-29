@@ -45,7 +45,7 @@ defmodule Kino.Table do
   use Kino.JS, assets_path: "lib/assets/data_table"
   use Kino.JS.Live
 
-  @limit 10
+  @limit 100
 
   def new(module, init_arg) do
     Kino.JS.Live.new(__MODULE__, {module, init_arg})
